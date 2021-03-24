@@ -12,7 +12,7 @@
 
 ## Screenshots
 #### *Jenkins - it is an open source automation server:*
-![selenoid_screenshot](src/test/resources/images/jenkins.png)
+![jenkins](src/test/resources/images/jenkins.png)
 <br />
 <br />
 <br />

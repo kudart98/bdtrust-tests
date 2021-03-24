@@ -30,4 +30,23 @@ public class SearchTests extends TestBase {
                 .shouldBe(visible);
 
     }
+
+    @Test
+    @DisplayName("This test should fail")
+    void baseSearchfail() {
+
+        String search = "who we are";
+        open("");
+        $("#gsc-i-id1").setValue(search).pressEnter();
+        $$(".gsc-expanionArea").shouldHave(texts(search));
+        $(".gsc-expansionArea div  a").click();
+        String winHandleBefore = getWebDriver().getWindowHandle();
+        for (String winHandle : getWebDriver().getWindowHandles()) {
+            getWebDriver().switchTo().window(winHandle);
+        }
+        $(".founder-img")
+                .scrollIntoView(true)
+                .shouldBe(visible);
+
+    }
 }
