@@ -18,12 +18,11 @@
 <br />
 
 #### *Allure Report - it is a flexible lightweight test report tool:*
-![selenoid_screenshot](src/test/resources/images/allure_report_1.png)
-![selenoid_screenshot](src/test/resources/images/allure_report_2.png)
+![allure](src/test/resources/images/allure0.png)
+![allure](src/test/resources/images/allure1.png)
 <br />
 <br />
 <br />
 
 #### *Selenoid - a lightning fast Selenium protocol implementation running browsers in Docker containers:*
-![selenoid_screenshot](src/test/resources/images/selenoid.png)
-![selenoid_screenshot](src/test/resources/images/selenoid_video.gif)
+![selenoid_screenshot](src/test/resources/images/selenoid.gif)
