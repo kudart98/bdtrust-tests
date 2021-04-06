@@ -9,27 +9,24 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static com.codeborne.selenide.logevents.SelenideLogger.addListener;
 import static helpers.AttachmentsHelper.*;
-import static helpers.DriverHelper.configureDriver;
+
 
 public class TestBase {
     @BeforeAll
     public static void beforeAll() {
-        configureDriver();
+        Configuration.baseUrl = "https://bdtrust.org/";
         addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(true));
         Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.startMaximized = true;
 
         if (System.getProperty("remote_driver") != null) {
-            // config for Java + Selenide
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.setCapability("enableVNC", true);
             capabilities.setCapability("enableVideo", true);
             Configuration.browserCapabilities = capabilities;
-            //Configuration.remote = "https://user1:1234@selenoid.autotests.cloud:4444/wd/hub/";
             Configuration.remote = System.getProperty("remote_driver");
         }
     }
-
 
     @AfterEach
     public void afterEach() {

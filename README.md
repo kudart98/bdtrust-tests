@@ -12,17 +12,17 @@
 
 ## Screenshots
 #### *Jenkins - it is an open source automation server:*
-![jenkins](src/test/resources/images/jenkins.png)
+![jenkins](readmeima/jenkins.png)
 <br />
 <br />
 <br />
 
 #### *Allure Report - it is a flexible lightweight test report tool:*
-![allure](src/test/resources/images/allure0.png)
-![allure](src/test/resources/images/allure1.png)
+![allure](readmeima/allure0.png)
+![allure](readmeima/allure1.png)
 <br />
 <br />
 <br />
 
 #### *Selenoid - a lightning fast Selenium protocol implementation running browsers in Docker containers:*
-![selenoid_screenshot](src/test/resources/images/selenoid.gif)
+![selenoid_screenshot](readmeima/selenoid.gif)
